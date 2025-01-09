@@ -1,37 +1,45 @@
 # Veri Tipleri ve Değişkenler (Data Types and Variables)
 
-# String türündeki değişkenler çift tırnak (" ") içerisinde tutulur.
-# Number (sayı) türündeki değişkenlerde ise tırnağa gerek yoktur.
-character_name = "Erinç"
-character_age = 21
-print(character_name)
-print(character_age)
+# String türündeki değişkenler çift tırnak (" ") veya tek tırnak (' ') içinde tanımlanır.
+# Sayı (Number) türündeki değişkenlerde tırnağa gerek yoktur.
+character_name = "Erinç"  # String türünde bir değişken
+character_age = 21  # Sayı (tam sayı) türünde bir değişken
+print(character_name)  # Değişkeni ekrana yazdırır: Erinç
+print(character_age)  # Değişkeni ekrana yazdırır: 21
 
-# Burada değişkenler güncelleniyor. Yani, bir değişkenin değerini sonradan değiştirebiliriz.
-character_name = "Messi"
-character_age = 38
+# Değişkenler sonradan yeni bir değer alabilir.
+character_name = "Messi"  # Değişkenin yeni değeri: Messi
+character_age = 38  # Değişkenin yeni değeri: 38
 
-# + işareti, print fonksiyonunda stringleri birleştirmek (concatenate) için kullanılır.
-# character_age bir sayı (number) olduğu için, str() fonksiyonu ile string'e dönüştürülmesi gerekir.
+# + operatörü string birleştirmek (concatenate) için kullanılır.
+# Ancak sayılar string'e dönüştürülmeden birleştirilemez.
+# str() fonksiyonu ile bir sayıyı string'e dönüştürüyoruz.
 print("Name is " + character_name + " and " + str(character_age) + " years old.")
+# Çıktı: Name is Messi and 38 years old.
 
-# Alternatif olarak f-string kullanılabilir.
+# f-string, string birleştirme için daha kolay ve okunabilir bir yöntemdir.
+# Süslü parantez ({}) içinde değişken isimlerini kullanarak birleştirme yapılır.
 print(f"Name is {character_name} and {character_age} years old.")
+# Çıktı: Name is Messi and 38 years old.
 
-# Sayılar ondalık (decimal) biçimde de tanımlanabilir.
-character_age = 18.01
-print(character_age)
+# Sayılar ondalık (float) türünde de tanımlanabilir.
+character_age = 18.01  # Ondalık sayı türünde bir değişken
+print(character_age)  # Çıktı: 18.01
 
 # Python'da 3 temel veri türü (data type) vardır:
-# Number (Sayı)
-number = 1
-# String (Metin)
-string = "Hello"
-# Boolean (Mantıksal Değer)
-is_True = True
+# 1. Sayı (Number): Tam sayılar (int) veya ondalık sayılar (float)
+number = 1  # Tam sayı
+# 2. Metin (String): Karakterlerden oluşan bir veri türü
+string = "Hello"  # String türünde bir veri
+# 3. Mantıksal Değer (Boolean): True (Doğru) veya False (Yanlış)
+is_True = True  # Boolean türünde bir veri
 
-# \n, yeni bir satır oluşturmak için kullanılır.
+# \n, yeni bir satır eklemek için kullanılır.
 print('Erinç \nkodlama öğreniyor')
+# Çıktı:
+# Erinç
+# kodlama öğreniyor
 
-# \' ifadesi, string içinde tek tırnağı kaçış karakteri olarak kullanmamızı sağlar.
+# \' ifadesi, string içinde tek tırnak kullanmak için kaçış karakteridir.
 print('Erinç \'kodlama\' öğreniyor')
+# Çıktı: Erinç 'kodlama' öğreniyor
